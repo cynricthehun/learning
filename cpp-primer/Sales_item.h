@@ -115,6 +115,7 @@ std::istream&
 operator>>(std::istream& in, Sales_item& s)
 {
     double price;
+    std::cout << "enter your books number and then units sold. Be sure to submit each entry individually." << std::endl;
     in >> s.bookNo >> s.units_sold >> price;
     // check that the inputs succeeded
     if (in)
